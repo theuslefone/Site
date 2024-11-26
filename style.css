@@ -98,6 +98,7 @@ main {
     padding: 0;
     overflow-y: auto;
     height: 250px;
+    padding-right: 15px;
 }
 
 .price-table li {
