@@ -105,7 +105,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
-    font-size: 18px;
+    font-size: 14px;
     color: #f0f0f0;
     border-bottom: 1px solid rgba(240, 217, 8, 0.4); /* Cor da borda mais leve */
     transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
