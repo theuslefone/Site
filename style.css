@@ -42,10 +42,12 @@ main {
 }
 
 .links {
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .links a {
