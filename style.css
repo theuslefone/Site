@@ -51,11 +51,6 @@ body {
     color: #001a33;
 }
 
-.price-table li:hover {
-    background-color: #FF0000;
-    color: #ffffff;
-}
-
 .logo {
     display: block;
     margin: 20px auto;
