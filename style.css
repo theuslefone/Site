@@ -1,138 +1,89 @@
-/* Configuração geral */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    height: 100vh;
-    background: url(/assets/bg.png) no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #001a33;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative; /* Necessário para o overlay */
-    overflow: hidden;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade para escurecer mais ou menos */
-    z-index: 1;
-}
-
-/* Conteúdo acima do overlay */
-main {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Estilização da logo */
-.logo {
-    max-width: 300px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-}
-
-.links {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.links a {
-    width: 100%;
-    max-width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid;
-    border-color: #F0D908;
-    background: transparent;
-    color: white;
-    font-size: 20px;
-    transition: background-color 0.3s, transform 0.2s;
-    height: 40px;
-    text-decoration: none;
-}
-
-.links a:hover {
-    background-color: #e5c600;
-    transform: scale(1.05);
-}
-
-/* Tabela de preços aprimorada */
 .price-table {
-    width: 90%;
-    max-width: 300px;
-    background-color: rgb(0 0 0 / 45%);
-    /* Fundo um pouco mais escuro */
-    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5); /* Sombra mais evidente */
-    text-align: center;
-    overflow: hidden; /* Para evitar elementos extrapolando bordas */
-    padding-bottom: 60px;
+    background-color: #001a33;
+    border: 5px solid #FF0000;
+    border-radius: 10px;
 }
 
 .price-table h2 {
-    font-size: 26px;
-    margin: 5px;
-    color: #F0D908;
+    text-align: center;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.price-table h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    border-bottom: 2px solid #FF0000;
+    padding-bottom: 5px;
 }
 
 .price-table ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    overflow-y: auto;
-    height: 250px;
-    padding-right: 15px;
 }
 
 .price-table li {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
-    font-size: 14px;
-    color: #f0f0f0;
-    border-bottom: 1px solid rgba(240, 217, 8, 0.4); /* Cor da borda mais leve */
-    transition: background-color 0.3s ease; /* Efeito ao passar o mouse */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #FF0000;
+    color: white;
+    border-radius: 5px;
+}
+
+.price-table li:nth-child(even) {
+    background-color: white;
+    color: #001a33;
 }
 
 .price-table li:hover {
-    background-color: rgba(240, 217, 8, 0.2); /* Destaque ao passar o mouse */
+    background-color: #FF0000;
+    color: #ffffff;
 }
 
-.price-table li:last-child {
-    border-bottom: none;
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
 }
 
-.price-table span:first-child {
-    color: #F0D908;
+.links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.links a {
+    display: inline-block;
+    margin: 0 10px;
+    transform: 0.2s linear;
+    text-decoration: none;
+    color: #FF0000;
+    background: white;
     font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
 }
 
-.price-table span:last-child {
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: right;
+.links a:hover {
+    background-color: #FF0000;
+    color: white;
 }
-
 /* Botão do WhatsApp */
 #zapzap {
     position: fixed;
